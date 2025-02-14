@@ -145,8 +145,8 @@
 
 // // Testcase
 // function adđ_length(a, b) {
-//   let Nho = 0; // Số nhớ
-//   let result = ""; // Chuỗi kết quả
+//   let Nho = 0; 
+//   let result = "";
 //   let daySo1 = a.length;
 //   let daySo2 = b.length;
 //   let maxLen = Math.max(daySo1, daySo2);
@@ -155,8 +155,8 @@
 //     let digit2 = i < daySo2 ? parseInt(b[daySo2 - 1 - i]) : 0;
 //     let sum = digit1 + digit2 + Nho;
 
-//     result = (sum % 10) + result; // Lấy hàng đơn vị
-//     Nho = Math.floor(sum / 10); // Lấy số nhớ
+//     result = (sum % 10) + result;
+//     Nho = Math.floor(sum / 10); 
 //   }
 //   if (Nho > 0) {
 //     result = Nho + result;
@@ -174,16 +174,15 @@
 // function multiply_length(a, b) {
 //   let daySo1 = a.length,
 //     daySo2 = b.length;
-//   let result = Array(daySo1 + daySo2).fill(0); // Mảng chứa kết quả
+//   let result = Array(daySo1 + daySo2).fill(0); 
 
 //   for (let i = daySo1 - 1; i >= 0; i--) {
 //     for (let j = daySo2 - 1; j >= 0; j--) {
 //       let mul = parseInt(a[i]) * parseInt(b[j]);
 //       let sum = mul + result[i + j + 1];
 
-//       result[i + j + 1] = sum % 10; // Lấy hàng đơn vị
-//       result[i + j] += Math.floor(sum / 10); // Cộng số nhớ vào vị trí trước đó
-//     }
+//       result[i + j + 1] = sum % 10; 
+//       result[i + j] += Math.floor(sum / 10);
 //   }
 
 //   // Loại bỏ các số 0 dư ở đầu
